@@ -1,0 +1,16 @@
+paquetes installar
+-------------------------------------------
+npm install apollo-server
+npm install graphql
+npm install express
+npm install nodemon -D
+npm install apollo-server-express
+
+Para Levantar el Servidor
+---------------------------------------------
+npm start
+
+
+Documentacion
+-----------------------------------------------------------------------------
+https://www.apollographql.com/docs/apollo-server/getting-started/
