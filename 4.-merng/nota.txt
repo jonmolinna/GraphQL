@@ -1,0 +1,11 @@
+npm install apollo-server
+npm install graphql
+npm install mongoose
+npm install nodemon -D
+npm install bcryptjs => para indexar la contraseña.
+npm install jsonwebtoken
+
+Para levantar el servidor
+---------------------------------------
+node index
+npm run start
