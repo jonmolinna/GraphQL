@@ -4,6 +4,7 @@ npm install mongoose
 npm install nodemon -D
 npm install bcryptjs => para indexar la contraseña.
 npm install jsonwebtoken
+npm install graphql-subscriptions => Permite Escuchar los nuevos cambios
 
 Para levantar el servidor
 ---------------------------------------
