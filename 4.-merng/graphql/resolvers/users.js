@@ -93,7 +93,7 @@ module.exports = {
 
 
 /*
-
+----------------- CREAR UN USUARIO ---------------------
 mutation {
   register(registerInput:{
     username: "dallas"
@@ -109,17 +109,7 @@ mutation {
   }
 }
 
---------------------------------------------------
-mutation {
-  login(username:"kendra", password:"kendra123"){
-    id
-    email
-    token
-    username
-    createdAt
-  }
-}
-
+----------------- LOGIN ---------------------------------
 mutation {
   login(username:"eung", password:"eung123"){
     id
@@ -214,6 +204,31 @@ mutation comment {
       createdAt
       username
       body
+    }
+  }
+}
+
+--------------- Eliminar un Comentario -----------------
+mutation{
+  deleteComment(postId: "6124db1d22acbd031851a89a" commentId: "6124df4022acbd031851a8b2"){
+    id
+    comments {
+      id
+      username
+      body
+    }
+  }
+}
+
+---------------- Like Comments ---------------------
+mutation{
+  likePost(postId: "6124db1d22acbd031851a89a"){
+    id
+    body
+    username
+    likes {
+      id
+      username
     }
   }
 }
