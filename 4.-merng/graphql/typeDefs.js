@@ -23,6 +23,8 @@ module.exports = gql`
         username: String!
         comments: [Comment]!
         likes: [Like]!
+        likeCount: Int!
+        commentCount: Int!
     }
 
     type User {
@@ -51,6 +53,10 @@ module.exports = gql`
         id: ID!
         createdAt: String!
         username: String!
+    }
+
+    type Subscription {
+        newPost: Post!
     }
 
 `;
