@@ -1,3 +1,5 @@
+Instalar Backend
+----------------------------------------------------
 npm install apollo-server
 npm install graphql
 npm install mongoose
@@ -10,3 +12,22 @@ Para levantar el servidor
 ---------------------------------------
 node index
 npm run start
+
+Instalar Fronted
+-------------------------------------------------------
+npm install @apollo/react-hooks
+npm install apollo-cache-inmemory
+npm install apollo-link-http
+npm install apollo-client
+npm install react-router-dom
+npm install semantic-ui-css
+npm install semantic-ui-react
+npm install graphql
+npm install graphql-tag
+npm install moment
+npm install jwt-decode
+npm install apollo-link-context
+
+Para subir a Heroku
+--------------------------------------------------------
+2:15
