@@ -1,0 +1,46 @@
+npm install -g sequelize-cli => instalando base de datos.
+npm list -g --depth 0 => verificando la data.
+sequelize --help
+
+Backend
+--------------------------------------------
+npm install apollo-server graphql
+npm install nodemon -D
+npm install --save sequelize
+npm install --save mysql2
+npm install bcryptjs
+npm install jsonwebtoken
+
+Frontend
+-----------------------------------------------
+npm install react-bootstrap@next bootstrap@
+npm install node-sass
+npm install @apollo/client graphql
+npm install react-router-dom
+npm install jwt-decode => codifica los tokens
+npm install classnames => permite unir classes
+npm install moment
+
+npm audit fix
+
+sequelize init (carpetas: config, migrations, models, seeders)
+crear un base de datos en mysql con el nombre de chat.
+
+creando tablas
+---------------------
+sequelize model:generate --name User --attributes username:string,email:string
+sequelize model:generate --name Message --attributes content:string,uuid:uuid,from:string,to:string
+
+sequelize seed:generate --name create-users => Crea un archivo de usuario
+sequelize seed:generate --name create-messages
+
+- select * from chat.users
+- describe chat.users
+
+Para Migrar
+-----------------------------------
+- sequelize db:migrate
+- sequelize db:migrate:undo (es para eliminar la migracion)
+- sequelize db:migrate:undo:all (es para eliminar toda la migracion)
+
+- sequelize db:seed:all (ejecutando las carpeta seed para insertar los datos users y messages)
