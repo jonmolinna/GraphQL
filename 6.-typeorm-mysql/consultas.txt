@@ -1,0 +1,50 @@
+-------------------------- Update User
+mutation {
+  updateUser (
+    id: 3,
+    name: "kendra contreras",
+    username: "kcontreras",
+    oldPassword: "123456789",
+    newPassword: "123456789"
+  ) {
+    success,
+    message
+  }
+}
+
+-------------------------- Delete User
+mutation {
+  deleteUser(id: 1)
+}
+
+-------------------------- List user by Id
+{
+  getUser(id: 2) {
+    id
+    name
+    username
+  }
+}
+
+-------------------------- List users
+{
+  getAllUsers {
+    id
+    name
+    username
+  }
+}
+
+-------------------------- create user
+mutation {
+  createUser(
+    name: "malina tanase",
+    username: "tanase123",
+    password: "123456789"
+  ) {
+    id
+    name
+    username
+    password
+  }
+}

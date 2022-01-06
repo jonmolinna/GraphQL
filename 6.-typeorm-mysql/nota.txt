@@ -1,0 +1,42 @@
+npm init -y
+
+npm install express
+npm install express-graphql
+npm install graphql
+npm install mysql
+npm install typeorm
+npm install cors
+npm install bcryptjs
+npm install dotenv
+
+npm install typescript -D
+npm install ts-node-dev -D => es semejante a nodemon
+npm install @types/bcryptjs -D
+npm install @types/cors -D
+npm install @types/express -D
+npm install @types/node -D
+
+npx tsc --init => crea tsconfig.json (configuracion de typescript)
+    - "rootDir": "./src",
+    - "outDir": "./dist",
+    - "experimentalDecorators": true,
+    - "emitDecoratorMetadata": true,
+    - "strictPropertyInitialization": false, 
+
+npx tsc -> comando para convertir a javascript
+
+npm run dev => levantar el servidor
+
+
+Algunas problemas con la conexion de mysql
+-----------------------------------------------
+en cmd de mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'password'
+flush privileges
+
+
+
+Para despliegue
+-------------------------------------------------------
+npm run build
