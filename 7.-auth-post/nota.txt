@@ -1,0 +1,10 @@
+npm init -y
+
+npm install express
+npm install graphql
+npm install express-graphql
+npm install mongoose
+npm install jsonwebtoken
+npm install dotenv
+
+npm install nodemon -D
