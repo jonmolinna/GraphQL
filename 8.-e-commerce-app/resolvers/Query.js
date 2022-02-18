@@ -19,9 +19,24 @@ exports.Query = {
         let filteredProducts = db.products;
 
         if (filter) {
-            if (filter.onSale === true) {
+            const { onSale, avgRating } = filter;
+            if (onSale) {
                 filteredProducts = filteredProducts.filter(product => product.onSale);
-            }
+            };
+            if([1,2,3,4,5].includes(avgRating)) {
+                filteredProducts = filteredProducts.filter(product => {
+                    let sumRating = 0;
+                    let numberOfReviews = 0;
+                    db.reviews.forEach(rewview => {
+                        if (rewview.productId === product.id) {
+                            sumRating += rewview.rating;
+                            numberOfReviews++;
+                        } 
+                    });
+                    const avgProductRating = sumRating / numberOfReviews;
+                    return avgProductRating >= avgRating;
+                });
+            };
         }
         return filteredProducts
     },

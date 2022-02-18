@@ -2,6 +2,7 @@ npm init -y
 
 npm install apollo-server
 npm install graphql
+npm install uuid
 
 
 parent  :   args    :   context
@@ -11,4 +12,4 @@ parent      => trae todos los atributos de la schema (db) del padre.
 context     => puedes almacenar variables globales es como req.token = token (node)
 
 
-2:12:28
+2:47:54

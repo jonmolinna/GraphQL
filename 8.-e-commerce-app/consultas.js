@@ -1,4 +1,41 @@
 /**
+mutation {
+  addProduct(input: {
+    name: "Fork",
+    image: "img-55",
+    price: 555.55,
+    onSale: true,
+    quantity: 2,
+    categoryId: "c01b1ff4-f894-4ef2-b27a-22aacc2fca70",
+    description: "Gold Diamond Fork"
+  }) {
+    id
+    name
+  }
+}
+
+mutation {
+  addCategory(input: {
+    name: "Office"
+  }) {
+    id
+    name
+  }
+}
+
+query {
+  products (filter: {
+    onSale: true,
+    avgRating: 3
+  }) {
+    name
+    price
+    reviews {
+      rating
+    }
+  }
+}
+
 query {
   category(id: "c01b1ff4-f894-4ef2-b27a-22aacc2fca70") {
     id
