@@ -20,6 +20,7 @@ const server = new ApolloServer({
         categories: db.categories,
         products: db.products,
         reviews: db.reviews,
+        db,
     }
 });
 

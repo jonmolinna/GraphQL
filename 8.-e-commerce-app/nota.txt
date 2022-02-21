@@ -10,6 +10,3 @@ parent  :   args    :   context
 args        => req.body ó req.params
 parent      => trae todos los atributos de la schema (db) del padre.
 context     => puedes almacenar variables globales es como req.token = token (node)
-
-
-2:47:54
