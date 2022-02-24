@@ -1,0 +1,7 @@
+npm install graphql
+npm install @apollo/client
+npm install react-router-dom@5.3.0
+
+useQuery => se ejecuta automaticamente
+useLazyQuery => se ejecuta mediante un evento (click)
+useMutation => es para editar, eliminar y add, funciona como useLazyQuery

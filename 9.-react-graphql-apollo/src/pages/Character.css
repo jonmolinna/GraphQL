@@ -1,0 +1,17 @@
+.Character {
+  display: flex;
+}
+
+.Character img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Character-content {
+  margin-left: 2rem;
+}
+
+.Character-episode {
+  margin-top: 2rem;
+}
